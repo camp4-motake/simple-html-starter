@@ -1,7 +1,6 @@
-import { domReady } from './util/domReady';
+import Alpine from 'alpinejs';
+import { components } from './components';
 
-const main = (event?: Event) => {
-  console.log(event);
-};
-
-domReady(main);
+window.Alpine = Alpine;
+Alpine.plugin(components);
+Alpine.start();

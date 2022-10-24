@@ -1,12 +1,12 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "stylelint.validate": [
-    "css",
-    "scss",
-    "postcss",
-  ],
+  "css.validate": false,
+  "postcss.validate": false,
   "files.associations": {
     "*.css": "postcss"
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
   }
 }
