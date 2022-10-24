@@ -14,7 +14,7 @@
   <meta property="og:type" content="{{ ogType or 'article' }}" />
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:description" content="{{ description or metadata.description or '' }}" />
-  <meta property="og:url" content="{{ metadata.siteUrl }}" />
+  <meta property="og:url" content="{{ metadata.siteUrl | urlJoin(page.url or canonical or '/') }}" />
   <meta property="og:site_name" content="{{ metadata.site_name }}" />
   {% if metadata.siteUrl -%}
   <meta property="og:image"
@@ -24,7 +24,7 @@
   {% if metadata.twitterSite -%}
   <meta name="twitter:site" content="{{ metadata.twitterSite or '' }}" />
   {%- endif -%}
-  <link rel="canonical" href="{{ metadata.siteUrl|urlJoin(canonical or '/') }}" />
+  <link rel="canonical" href="{{ metadata.siteUrl | urlJoin(page.url or canonical or '/') }}" />
   {% if metadata.webFonts -%}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
