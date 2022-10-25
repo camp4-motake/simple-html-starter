@@ -16,3 +16,7 @@ npm run dev
 # production build
 npm run build
 ```
+
+## deploy
+
+production buildし、生成された`dist/`ディレクトリ内をアップします。
