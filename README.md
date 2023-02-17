@@ -14,7 +14,7 @@ npm ci
 
 # development -> http://localhost:8080
 npm run dev
-s
+
 # production build
 npm run build
 ```
