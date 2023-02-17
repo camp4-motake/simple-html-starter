@@ -5,7 +5,7 @@ const posthtml = require('posthtml');
 const posthtmlUrls = require('posthtml-urls');
 const { minify } = require('html-minifier-terser');
 
-const INPUT_DIR = 'src/html';
+const INPUT_DIR = 'src/views';
 const OUTPUT_DIR = 'dist';
 const PATH_PREFIX = '/';
 
@@ -18,16 +18,6 @@ const isHtmlMinify = true;
  * @see https://www.11ty.dev/docs/config/
  */
 module.exports = function (eleventyConfig) {
-  // @see https://browsersync.io/docs/options
-  eleventyConfig.setBrowserSyncConfig({
-    files: [`${OUTPUT_DIR}/**/*.css`, `${OUTPUT_DIR}/**/*.js`],
-    injectChanges: true,
-    ignore: ['node_modules'],
-    notify: false,
-    open: false,
-    ui: false,
-  });
-
   eleventyConfig.addPassthroughCopy({ 'src/static': '.' });
 
   if (inProduction) {
