@@ -4,7 +4,9 @@
   "css.validate": false,
   "postcss.validate": false,
   "files.associations": {
-    "*.css": "postcss"
+    "*.css": "postcss",
+    "*.webc": "html",
+    "*.njk": "html"
   },
   "emmet.includeLanguages": {
     "postcss": "css"
