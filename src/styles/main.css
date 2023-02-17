@@ -5,7 +5,7 @@
   custom medita: src/styles/custom-media.css
 */
 
-@import "variables";
+@import "custom-property";
 @import "ress";
 @import "global";
 @import "modules";
