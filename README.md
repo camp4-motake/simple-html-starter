@@ -2,7 +2,7 @@
 
 ## Feature
 
-- html: [11ty2.0](https://github.com/11ty/eleventy/)
+- html: [11ty 2.0](https://github.com/11ty/eleventy/)
 - js: [TypeScript](https://www.typescriptlang.org/ja/) | [esbuild](https://esbuild.github.io/)
 - css: postcss | [postcss-preset-env](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env) ([stage2](https://preset-env.cssdb.org/features/#stage-2))
 
