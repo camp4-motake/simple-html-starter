@@ -18,6 +18,10 @@ const isHtmlMinify = true;
  * @see https://www.11ty.dev/docs/config/
  */
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setServerOptions({
+    watch: [`${OUTPUT_DIR}/**/*.css`, `${OUTPUT_DIR}/**/*.js`],
+  });
+
   eleventyConfig.addPassthroughCopy({ 'src/static': '.' });
 
   if (inProduction) {
